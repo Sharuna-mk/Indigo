@@ -1,0 +1,313 @@
+*{
+   margin:0px;
+   padding:0px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.carousel1 {
+   
+    overflow-x: auto;
+   margin-left: 10px;
+   margin-right: 180px;
+    display: flex;
+    
+    gap:1em;
+    scroll-behavior: smooth;
+    anchor-name: --carousel;
+    scroll-snap-type: x mandatory;
+}
+.carousel1::-webkit-scrollbar{
+    display: none;
+}
+.carousel1::scroll-button(right){
+    content: '>';
+    color: white;
+    background-color: darkblue;
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding-bottom: .1em;
+    cursor: pointer;
+    position: absolute;
+    position-anchor: --carousel;
+    position-area: right center;
+    translate: -50%;
+  
+}
+
+.carousel1::scroll-button(left){
+   margin-left: 150px;
+    content: '<';
+    color: white;
+      border: none;
+      background-color: darkblue;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding-bottom: .1em;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --carousel;
+    position-area: left center;
+    translate: 50%;
+}
+
+.carousel1::scroll-button(right):disabled,.carousel::scroll-button(left):disabled{
+    opacity: 0.5;
+    cursor: auto;
+}
+
+
+@media(max-width: 500px){
+    .card{
+        flex:0 0 100%;
+    }
+}
+
+#destination img{
+    height: 150px;
+    width: 250px;
+    border: 5px solid darkblue;
+    margin-left: 15px;
+    border-radius: 55px;
+    
+    
+}
+
+.story-stack {
+  position: relative;
+  width: 320px;
+  height: 450px;
+}
+
+.story-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.front { 
+  z-index: 3; 
+  transform: rotate(0deg); 
+}
+.middle { 
+  z-index: 2; 
+  transform: rotate(-5deg) translateY(10px); 
+}
+.back { 
+  z-index: 1; 
+  transform: rotate(5deg) translateY(20px); 
+}
+#girl{
+    background: linear-gradient(#fff,#afe4ff);
+}
+
+footer a{
+    color: white;
+}
+
+/* From Uiverse.io by iZOXVL */ 
+.boton-elegante {
+  
+  border: 1px solid gray;
+  
+  color: gray;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.carousel2 {
+   
+    overflow-x: auto;
+   margin-left: 10px;
+   margin-right: 150px;
+    display: flex;
+    
+    gap:1em;
+    scroll-behavior: smooth;
+    anchor-name: --carousel2;
+    scroll-snap-type: x mandatory;
+}
+.carousel2::-webkit-scrollbar{
+    display: none;
+}
+.carousel2::scroll-button(right){
+    content: '>';
+    color: white;
+    background-color: darkblue;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    padding-bottom: .1em;
+    cursor: pointer;
+    position: absolute;
+    position-anchor: --carousel2;
+    position-area: right center;
+    translate: -450%;
+    margin-top: -90%;
+  
+}
+
+.carousel2::scroll-button(left){
+   margin-left: 150px;
+    content: '<';
+    color: white;
+      border: none;
+      background-color: darkblue;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    padding-bottom: .1em;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --carousel2;
+    position-area: left center;
+    translate: 1108px;
+    margin-top: -90%;
+}
+
+.carousel2::scroll-button(right):disabled,.carousel::scroll-button(left):disabled{
+    opacity: 0.5;
+    cursor: auto;
+}
+
+#c1 img{
+    padding: 10px;
+    margin-left: 50px;
+    border-radius: 2%;
+    border-radius: 10%;
+    
+}
+.carousel3 {
+   
+    overflow-x: auto;
+   margin-left: 10px;
+   margin-right: 150px;
+    display: flex;
+    
+    gap:1em;
+    scroll-behavior: smooth;
+    anchor-name: --carousel3;
+    scroll-snap-type: x mandatory;
+}
+.carousel3::-webkit-scrollbar{
+    display: none;
+}
+.carousel3::scroll-button(right){
+    content: '>';
+    color: white;
+    background-color: darkblue;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    padding-bottom: .1em;
+    cursor: pointer;
+    position: absolute;
+    position-anchor: --carousel3;
+    position-area: right center;
+    translate: -450%;
+    margin-top: -90%;
+  
+}
+
+.carousel3::scroll-button(left){
+   margin-left: 150px;
+    content: '<';
+    color: white;
+      border: none;
+      background-color: darkblue;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    padding-bottom: .1em;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --carousel3;
+    position-area: left center;
+    translate: 1108px;
+    margin-top: -90%;
+}
+
+.carousel3::scroll-button(right):disabled,.carousel::scroll-button(left):disabled{
+    opacity: 0.5;
+    cursor: auto;
+}
+
+#c2 img{
+    padding: 10px;
+    margin-left: 50px;
+    border-radius: 10%;
+}
+
+
+/* Container styles */
+.scrolling-text-container {
+    background-color: #eff5ff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Inner container styles */
+.scrolling-text-inner {
+    display: flex;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+/* Text styles */
+.scrolling-text {
+    display: flex;
+}
+
+.scrolling-text-item {
+    padding: 0 30px;
+}
+
+/* Apply the animation to the text items */
+.scrolling-text-inner>div {
+    animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+
+/* Pause the animation when a user hovers over it */
+.scrolling-text-container:hover .scrolling-text-inner>div {
+    animation-play-state: paused;
+}
+
+/* Setting the Animation using Keyframes */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+
