@@ -156,7 +156,7 @@ content: '›';
   justify-content: center;
   position: absolute;
   right: 180px;
-  top: 1000px;
+  top: 1100px;
   transform: translateY(-50%);
   
 }
@@ -175,7 +175,7 @@ content: '›';
   justify-content: center;
   position: absolute;
   right: 230px;
-  top: 1000px;
+  top: 1100px;
 
   transform: translateY(-50%);
 
@@ -236,7 +236,7 @@ content: '›';
   justify-content: center;
   position: absolute;
   right: 180px;
-  top: 1000px;
+  top: 2650px;
   transform: translateY(-50%);
   
   
@@ -256,7 +256,7 @@ content: '›';
   justify-content: center;
   position: absolute;
   right: 230px;
-  top: 1000px;
+  top: 2650px;
 
   transform: translateY(-50%);
 }
@@ -332,21 +332,15 @@ content: '›';
 
 /* navbar */
 /* Make navbar stick properly */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 50;
-}
+
 
 /* Dropdown menu responsiveness */
-.dropdown-menu {
+/* .dropdown-menu {
   max-width: 100%;
   width: auto !important;
   padding: 1rem;
   overflow-x: auto; /* Allow scroll on very small screens */
-}
+/* } */
 
 /* Align row items nicely in dropdown */
 .dropdown-menu .row {
@@ -383,7 +377,7 @@ nav {
     margin-left: 0 ;
     margin-top: 0.5rem;
   }
-}
+} */
 
 /* banner */
 /* Banner section base */
